@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Er. Shubham Singh | SDET</title>
+<meta name="description" content="Er. Shubham Singh, Software Development Engineer in Test with 5+ years of experience in Manual and Automation Testing and Web Development.">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4FF;--surface:rgba(255,255,255,.72);--solid:#fff;--ink:#17123A;--muted:#5E5990;--line:rgba(108,75,255,.2);--a:#6C4BFF;--b:#FF5C8A;--c:#00A884;--glow:.35;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A0819;--surface:rgba(30,24,72,.55);--solid:#17133A;--ink:#F2F0FF;--muted:#A9A4D6;--line:rgba(140,115,255,.25);--a:#8C73FF;--b:#FF6F9C;--c:#2DE2B5;--glow:.5}}
+:root[data-theme="dark"]{--bg:#0A0819;--surface:rgba(30,24,72,.55);--solid:#17133A;--ink:#F2F0FF;--muted:#A9A4D6;--line:rgba(140,115,255,.25);--a:#8C73FF;--b:#FF6F9C;--c:#2DE2B5;--glow:.5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;line-height:1.2;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+#prog{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--a),var(--b),var(--c));z-index:20}
+.spot{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(500px circle at var(--x,50%) var(--y,30%),rgba(140,115,255,.16),transparent 60%)}
+nav{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:15;display:flex;gap:2px;align-items:center;padding:6px;border-radius:999px;background:var(--surface);border:1px solid var(--line);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);max-width:calc(100% - 20px)}
+nav a{padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:500;font-size:15px;transition:background .2s,color .2s;white-space:nowrap}
+nav a:hover{background:linear-gradient(100deg,var(--a),var(--b));color:#fff}
+nav button{border:0;background:none;font-size:18px;cursor:pointer;padding:6px 10px;border-radius:99px;color:var(--ink)}
+@media (max-width:760px){nav a:nth-child(n+4):not(:nth-last-child(2)){display:none}}
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:110px 0 70px}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:var(--glow);animation:float 12s ease-in-out infinite}
+.o1{width:440px;height:440px;background:var(--a);top:-120px;left:-120px}
+.o2{width:380px;height:380px;background:var(--b);bottom:-90px;right:-70px;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-40px,30px) scale(.92)}}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+.badge{letter-spacing:.01em;display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:99px;background:var(--surface);border:1px solid var(--line);font-weight:700;font-size:15px;margin-bottom:20px;backdrop-filter:blur(10px)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--c);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--c)}70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(34px,6.2vw,66px);font-weight:700;letter-spacing:-.01em;background:linear-gradient(100deg,var(--a),var(--b),var(--c),var(--a));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}
+@keyframes shine{to{background-position:300% 0}}
+.role{font-size:clamp(20px,3vw,28px);font-weight:600;margin:18px 0 10px;min-height:1.5em}
+.role b{color:var(--b)}
+.caret{display:inline-block;width:3px;height:1em;background:var(--b);margin-left:3px;vertical-align:-.12em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.meta{font-weight:700;color:var(--c);margin:0 0 14px;font-size:16px}
+.lead{color:var(--muted);max-width:50ch;margin:0 0 28px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--a);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 32px -8px var(--a)}
+.btn.fill{background:linear-gradient(100deg,var(--a),var(--b));border-color:transparent;color:#fff}
+.frame{width:290px;height:290px;position:relative;animation:bob 6s ease-in-out infinite}
+.frame::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px dashed var(--c);animation:spin 8s linear infinite}
+.frame::after{content:"";position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle at 50% 0,var(--c) 0 3px,transparent 3.5px);filter:drop-shadow(0 0 4px var(--c));animation:spin 8s linear infinite}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:50%}
+.avatar{position:absolute;inset:0;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;font:700 100px Unbounded,sans-serif;color:#fff;background:linear-gradient(135deg,var(--a),var(--b))}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-14px)}}
+.intro>*{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.intro>*:nth-child(2){animation-delay:.12s}.intro>*:nth-child(3){animation-delay:.24s}.intro>*:nth-child(4){animation-delay:.36s}.intro>*:nth-child(5){animation-delay:.48s}.intro>*:nth-child(6){animation-delay:.6s}
+@keyframes rise{to{opacity:1;transform:none}}
+section{padding:100px 0 0}
+h2{font-size:clamp(26px,4vw,42px);font-weight:700;margin-bottom:34px;position:relative;display:inline-block}
+h2::after{content:"";position:absolute;left:0;bottom:-8px;height:5px;width:0;border-radius:9px;background:linear-gradient(90deg,var(--a),var(--b));transition:width 1s .3s cubic-bezier(.2,.7,.2,1)}
+.in h2::after{width:100%}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+p{margin:0 0 16px}
+.about p{max-width:68ch}
+.glass{background:var(--surface);border:1px solid var(--line);border-radius:26px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.tilt{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s,border-color .3s,box-shadow .3s}
+.tilt:hover{border-color:var(--a);box-shadow:0 24px 50px -24px var(--a)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:30px}
+.stat{padding:24px}
+.stat b{display:block;font:700 34px Unbounded,sans-serif;background:linear-gradient(100deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--muted);font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{padding:30px}
+.card h3{font-size:19px;margin-bottom:14px}
+.card small{display:block;color:var(--c);font-weight:700;margin-bottom:12px;font-size:15px}
+.ticks{list-style:none;margin:0;padding:0}
+.ticks li{position:relative;padding:0 0 10px 30px;color:var(--muted);font-size:17px;line-height:1.55}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--c);color:#04201A;font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:3px}
+.ticks li,.chips span{opacity:0;transform:translateX(-16px)}
+.in .ticks li{animation:slide .6s calc(var(--i)*.1s + .3s) both}
+.in .chips span{animation:pop .5s calc(var(--i)*.05s + .3s) both}
+@keyframes slide{to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:none}}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{padding:7px 16px;border-radius:99px;background:var(--solid);border:1px solid var(--line);font-size:16px;font-weight:500}
+.chips span:nth-child(3n+1){border-color:var(--a)}
+.proj{padding:34px}
+.proj h3{font-size:23px;margin-bottom:6px}
+.proj .btn{margin-top:8px}
+.timeline{margin:0;padding:0 0 0 34px;list-style:none;border-left:3px solid var(--line)}
+.timeline li{position:relative;padding-bottom:34px}
+.timeline li::before{content:"";position:absolute;left:-45px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--b);animation:pulse 2.4s infinite;color:var(--b)}
+.timeline em{font-style:normal;color:var(--c);font-weight:700;font-size:15px}
+.timeline h3{font-size:19px}
+.timeline p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.quote{text-align:center;padding:64px 28px;border-radius:32px;background:linear-gradient(135deg,var(--a),var(--b),var(--a));background-size:200% 200%;animation:bg 8s ease infinite;color:#fff}
+@keyframes bg{50%{background-position:100% 100%}}
+.quote p{font:700 clamp(21px,3.3vw,32px)/1.4 Unbounded,sans-serif;max-width:24ch;margin:0 auto 14px}
+.quote span{opacity:.9;font-weight:500}
+.marquee{overflow:hidden;margin-top:100px;border-block:1px solid var(--line);padding:22px 0;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track2{display:flex;gap:48px;width:max-content;animation:scroll 32s linear infinite;font:700 clamp(24px,4vw,38px) Unbounded,sans-serif;white-space:nowrap}
+.track2 span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--a)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.contact{padding:56px 34px;display:grid;gap:8px}
+.contact p{margin:0;color:var(--muted)}
+.contact b{color:var(--ink)}
+.contact .btns{margin-top:18px}
+footer{text-align:center;color:var(--muted);font-size:15px;padding:56px 24px 60px}
+footer strong{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr}.frame{width:190px;height:190px;order:-1}.avatar{font-size:68px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.intro>*,.ticks li,.chips span{opacity:1;transform:none}h2::after{width:100%}}
+</style>
+</head>
+<body>
+<div id="prog"></div><div class="spot" id="spot"></div>
+<nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#connect">Connect</a><button id="theme" type="button" aria-label="Switch theme">🌓</button></nav>
+
+<header class="hero">
+  <canvas id="cv"></canvas><div class="orb o1"></div><div class="orb o2"></div>
+  <div class="wrap hero-grid">
+    <div class="intro">
+      <div class="badge"><span class="dot"></span>Software Development Engineer in Test</div>
+      <h1>Er. Shubham Singh</h1>
+      <div class="role">I’m an <b id="typed"></b><span class="caret"></span></div>
+      <p class="meta">5+ Years · Manual Testing · Automation Testing · Web Development</p>
+      <p class="lead">Deliver quality, embrace continuous learning, and build technology that people can trust.</p>
+      <div class="btns"><a class="btn fill" href="#connect">Let’s connect</a><a class="btn" href="https://KrishiCrown.com" target="_blank" rel="noopener">Visit KrishiCrown.com</a></div>
+    </div>
+    <div class="frame"><div class="avatar"><span>S</span><img src="Shubham.jpg" alt="Er. Shubham Singh" onerror="this.remove()"></div></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about" class="rv">
+    <h2>About me</h2>
+    <div class="about">
+      <p>I am Er. Shubham Singh, an experienced Software Development Engineer in Test with a strong background in Manual and Automation Testing. Over the past five years, I have worked on the T-Mobile USA project, gaining professional experience in a software development and testing environment.</p>
+      <p>I believe software testing is more than finding defects. It is about understanding user expectations, evaluating application behavior, preventing potential issues, and helping teams deliver a better product.</p>
+      <p>Beyond testing, I built KrishiCrown.com, a website that reflects my interest in web development and my desire to turn ideas into practical online experiences.</p>
+    </div>
+    <div class="grid">
+      <div class="stat glass tilt"><b data-count="5" data-plus>5+</b><span>Years in software testing and QA</span></div>
+      <div class="stat glass tilt"><b>SDET</b><span>Professional role</span></div>
+      <div class="stat glass tilt"><b style="font-size:22px;line-height:2.1">Prayagraj</b><span>Uttar Pradesh, India</span></div>
+      <div class="stat glass tilt"><b style="font-size:22px;line-height:2.1">IIIT Bhopal</b><span>Bachelor of Technology (B.Tech)</span></div>
+    </div>
+  </section>
+
+  <section id="experience" class="rv">
+    <h2>Professional experience</h2>
+    <p style="max-width:62ch;color:var(--muted)">Five years of professional experience as an SDET, combining attention to detail, analytical thinking and systematic test execution.</p>
+    <div class="cards">
+      <div class="card glass tilt"><h3>Manual Testing</h3><ul class="ticks">
+        <li>Understanding and validating application requirements</li><li>Preparing and executing test cases</li><li>Functional and regression testing</li><li>Identifying, documenting and reporting defects</li><li>Validating behavior against expected results</li></ul></div>
+      <div class="card glass tilt"><h3>Automation Testing</h3><ul class="ticks">
+        <li>Automated approaches that improve test efficiency</li><li>Repeatable, consistent validation of functionality</li><li>Reducing repetitive manual testing effort</li><li>Reliable and maintainable testing practices</li><li>Regression testing through automation</li></ul></div>
+      <div class="card glass tilt"><h3>Software Quality Assurance</h3><ul class="ticks">
+        <li>Requirement analysis and test planning</li><li>Defect identification, documentation and tracking</li><li>Collaboration with development and testing teams</li><li>Systematic problem-solving</li><li>Continuous improvement of testing processes</li></ul></div>
+    </div>
+  </section>
+
+  <section id="projects" class="rv">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="proj glass tilt"><small>Role: SDET · 5 Years</small><h3>T-Mobile USA</h3>
+        <p style="color:var(--muted)">Five years on the T-Mobile USA project built my understanding of quality assurance, application validation, structured testing, clear defect reporting and collaboration across technical teams.</p>
+        <div class="chips"><span>Manual and Automation Testing</span><span>Functional and Regression Testing</span><span>Test Case Design and Execution</span><span>Defect Reporting and Validation</span></div></div>
+      <div class="proj glass tilt"><small>Personal web development project</small><h3>KrishiCrown.com</h3>
+        <p style="color:var(--muted)">A website I developed out of my interest in web development and digital solutions. It shows how I take an idea and present it online, and my drive to keep learning beyond software testing.</p>
+        <a class="btn fill" href="https://KrishiCrown.com" target="_blank" rel="noopener">Explore the website</a></div>
+    </div>
+  </section>
+
+  <section id="skills" class="rv">
+    <h2>Technical skills</h2>
+    <div class="cards">
+      <div class="card glass tilt"><h3>Software Testing</h3><div class="chips"><span>Manual Testing</span><span>Automation Testing</span><span>Functional Testing</span><span>Regression Testing</span><span>Test Case Design</span><span>Defect Tracking</span><span>Requirement Analysis</span><span>Quality Assurance</span></div></div>
+      <div class="card glass tilt"><h3>Test Automation</h3><div class="chips"><span>Automated Test Execution</span><span>Regression Automation</span><span>Test Validation and Maintenance</span><span>Reusable Practices</span></div></div>
+      <div class="card glass tilt"><h3>Web Development</h3><div class="chips"><span>Website Development</span><span>Web Application Concepts</span><span>User Interfaces</span></div></div>
+      <div class="card glass tilt"><h3>Professional Skills</h3><div class="chips"><span>Analytical Thinking</span><span>Problem-Solving</span><span>Attention to Detail</span><span>Team Collaboration</span><span>Continuous Learning</span><span>Quality-Focused Mindset</span></div></div>
+    </div>
+  </section>
+
+  <section id="education" class="rv">
+    <h2>Education</h2>
+    <div class="proj glass tilt"><small>Bachelor of Technology (B.Tech)</small><h3>Indian Institute of Information Technology, Bhopal</h3>
+      <p style="color:var(--muted);max-width:64ch;margin:0">My B.Tech at IIIT Bhopal built the foundation for my career in technology. Combined with professional experience, it shaped my interest in software engineering, testing methodologies and technology-driven solutions.</p></div>
+  </section>
+
+  <section id="journey" class="rv">
+    <h2>My professional journey</h2>
+    <ol class="timeline">
+      <li><em>Present</em><h3>Growing as an SDET</h3><p>Focused on software quality, Manual Testing, Automation Testing and effective testing practices.</p></li>
+      <li><em>Five years</em><h3>T-Mobile USA project</h3><p>Developing professional experience in software testing and quality assurance.</p></li>
+      <li><em>Web development</em><h3>Turning ideas into a website</h3><p>Building KrishiCrown.com and exploring the practical side of web development.</p></li>
+      <li><em>Education</em><h3>IIIT Bhopal</h3><p>Completing my B.Tech and building the foundation for a career in technology.</p></li>
+    </ol>
+  </section>
+
+  <section id="goals" class="rv">
+    <h2>Professional goals</h2>
+    <p style="max-width:66ch">I want to keep growing as an SDET by strengthening my testing expertise, improving automation capabilities and exploring modern software engineering practices, while also expanding my web development knowledge to build practical digital solutions.</p>
+    <div class="quote" style="margin-top:28px"><p>“Quality is not just about finding defects; it is about building confidence in every release.”</p><span>My philosophy</span></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track2" id="mq"></div></div>
+
+  <section id="connect" class="rv">
+    <h2>Let’s connect</h2>
+    <div class="contact glass">
+      <p>Have a project or opportunity in mind? Feel free to connect with me about software testing, automation, web development or professional opportunities.</p>
+      <p style="margin-top:12px"><b>Name:</b> Er. Shubham Singh</p>
+      <p><b>Location:</b> Prayagraj, Uttar Pradesh, India</p>
+      <p><b>Email:</b> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener">shubhamsingh10399@gmail.com</a></p>
+      <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/shubham-singh-386181160" target="_blank" rel="noopener">shubham-singh-386181160</a></p>
+      <p><b>GitHub:</b> <a href="https://github.com/ssingh10399" target="_blank" rel="noopener">ssingh10399</a></p>
+      <p><b>Website:</b> <a href="https://KrishiCrown.com" target="_blank" rel="noopener">KrishiCrown.com</a></p>
+      <div class="btns"><a class="btn fill" href="https://KrishiCrown.com" target="_blank" rel="noopener">Visit my website</a></div>
+    </div>
+  </section>
+</main>
+
+<footer><strong>Er. Shubham Singh | Software Development Engineer in Test (SDET)</strong>Manual Testing · Automation Testing · Software Quality Assurance · Web Development<br>© 2026 Er. Shubham Singh. All Rights Reserved.</footer>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,root=document.documentElement;
+  var roles=['SDET','Manual Tester','Automation Tester','Web Developer'],t=document.getElementById('typed'),ri=0,ci=0,del=false;
+  function type(){var w=roles[ri];ci+=del?-1:1;t.textContent=w.slice(0,ci);var d=del?45:95;
+    if(!del&&ci===w.length){del=true;d=1400}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=400}setTimeout(type,d)}
+  if(rm)t.textContent=roles[0];else type();
+  var words=['Quality','Automation','Reliability','Learning','Trust'],h='';
+  for(var k=0;k<2;k++)words.forEach(function(w){h+='<span>'+w+'</span><span>✦</span>'});
+  document.getElementById('mq').innerHTML=h+h;
+  document.querySelectorAll('.ticks,.chips').forEach(function(p){[].forEach.call(p.children,function(c,i){c.style.setProperty('--i',i)})});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);
+    e.target.querySelectorAll('[data-count]').forEach(function(n){if(rm)return;var to=+n.dataset.count,s=performance.now();
+      (function f(now){var p=Math.min((now-s)/1400,1);n.textContent=Math.round(to*(1-Math.pow(1-p,3)))+'+';if(p<1)requestAnimationFrame(f)})(s)})})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+  var pg=document.getElementById('prog');
+  addEventListener('scroll',function(){var m=document.body.scrollHeight-innerHeight;pg.style.width=(m>0?scrollY/m*100:0)+'%'},{passive:true});
+  var sp=document.getElementById('spot');
+  addEventListener('pointermove',function(e){sp.style.setProperty('--x',e.clientX+'px');sp.style.setProperty('--y',e.clientY+'px')},{passive:true});
+  if(!rm)document.querySelectorAll('.tilt').forEach(function(c){
+    c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*8+'deg');c.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*8+'deg')});
+    c.addEventListener('pointerleave',function(){c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')})});
+  document.getElementById('theme').addEventListener('click',function(){var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),nx=cur==='dark'?'light':'dark';root.setAttribute('data-theme',nx);try{localStorage.setItem('ss-theme',nx)}catch(x){}});
+  try{var th=localStorage.getItem('ss-theme');if(th)root.setAttribute('data-theme',th)}catch(x){}
+  var cv=document.getElementById('cv'),cx=cv.getContext('2d'),W,H,P=[],mx=-999,my=-999;
+  function size(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;P=[];var n=Math.min(70,Math.floor(W*H/16000));for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5})}
+  size();addEventListener('resize',size);
+  cv.parentNode.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+  function draw(){cx.clearRect(0,0,W,H);var col=getComputedStyle(root).getPropertyValue('--a').trim()||'#6C4BFF';cx.fillStyle=col;cx.strokeStyle=col;
+    P.forEach(function(p,i){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+      var dx=p.x-mx,dy=p.y-my,d=Math.sqrt(dx*dx+dy*dy);if(d<120){p.x+=dx/d*1.6;p.y+=dy/d*1.6}
+      cx.globalAlpha=.7;cx.beginPath();cx.arc(p.x,p.y,2.2,0,6.3);cx.fill();
+      for(var j=i+1;j<P.length;j++){var q=P[j],ex=p.x-q.x,ey=p.y-q.y,e=Math.sqrt(ex*ex+ey*ey);if(e<130){cx.globalAlpha=(1-e/130)*.35;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}});
+    requestAnimationFrame(draw)}
+  if(!rm)draw();
+})();
+</script>
+</body>
+</html>
